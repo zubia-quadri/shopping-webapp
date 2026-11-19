@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KENT Water Purifiers — Pure Water, Pure Life | Mineral RO™ Technology</title>
+  <meta name="description"
+    content="India's #1 Most Trusted Water Purifier Brand. Patented Mineral RO™ + UV + UF technology that retains natural minerals while eliminating 100% impurities. Book a free home demo." />
+
+  <!-- Preconnect for fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Google Fonts: Inter · Playfair Display · Space Grotesk -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════
+     NAVIGATION (Minimalist Dribbble Style)
+══════════════════════════════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Main navigation">
+
+        <!-- Left Group: Logo + Search Bar + Book a Demo Button -->
+        <div class="nav-left-group">
+          <!-- Logo: Official Blue Box KENT — House of Purity -->
+          <a href="#hero" class="nav-logo" aria-label="KENT Home">
+            <img src="assets/images/kent-logo-dark.png" alt="KENT — House of Purity" class="nav-logo-img" width="105"
+              height="53" />
+          </a>
+
+          <!-- Small Minimal Pill Search Bar (Dribbble-style) -->
+          <div class="nav-search-wrap" role="search">
+            <svg class="nav-search-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="search" class="nav-search-input" placeholder="Search purifiers..."
+              aria-label="Search purifiers" />
+          </div>
+
+          <!-- "Book a Demo" Button beside search bar -->
+          <a href="#demo" class="btn btn-nav-demo" aria-label="Book a Demo">
+            <span>Book a Demo</span>
+          </a>
+        </div>
+
+        <!-- Center: Navigation Links -->
+        <ul class="nav-links" role="list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#products">Purifiers</a></li>
+          <li><a href="#technology">Why KENT</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+        </ul>
+
+        <!-- Right Group: Wishlist + Cart + Login on extreme right -->
+        <div class="nav-right-actions">
+
+          <!-- Wishlist Icon Button -->
+          <button class="nav-icon-btn" id="wishlistBtn" aria-label="Wishlist (0 items)" title="Wishlist">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+              </path>
+            </svg>
+          </button>
+
+          <!-- Cart Icon Button -->
+          <div class="nav-cart-wrap">
+            <button class="nav-icon-btn" id="cartBtn" aria-label="Shopping Cart (1 item)" aria-haspopup="true"
+              aria-expanded="false" title="Shopping Cart">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+              <span class="cart-pill-count">1</span>
+            </button>
+            <!-- Cart Quick View Dropdown -->
+            <div class="cart-dropdown-panel" id="cartPanel" role="dialog" aria-label="Shopping Cart Summary">
+              <div class="cart-panel-head">
+                <span class="cart-panel-title">Your Cart (1)</span>
+                <span class="cart-badge-free">Free Delivery</span>
+              </div>
+              <div class="cart-panel-body">
+                <img src="assets/images/product_grand_star.jpg" alt="KENT Grand Star" class="cart-panel-thumb"
+                  width="44" height="44">
+                <div class="cart-panel-info">
+                  <strong>KENT Grand Star</strong>
+                  <span class="cart-panel-price">₹21,999</span>
+                  <span class="cart-panel-tag">Digital TDS Display</span>
+                </div>
+              </div>
+              <div class="cart-panel-footer">
+                <a href="#products" class="btn btn-cart-view">View Cart & Checkout</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Extreme Right: Login Icon Only -->
+          <div class="nav-account-wrap">
+            <button class="nav-icon-btn" id="accountBtn" aria-label="User Account Login" aria-haspopup="true"
+              aria-expanded="false" title="Account Login">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </button>
+            <!-- Account Quick Details Dropdown -->
+            <div class="account-dropdown-panel" id="accountPanel" role="menu" aria-label="Account details">
+              <div class="account-panel-head">
+                <div class="account-avatar">KP</div>
+                <div class="account-meta">
+                  <span class="account-name">KENT Member</span>
+                  <span class="account-email">user@kentpurifiers.in</span>
+                </div>
+              </div>
+              <div class="account-panel-links">
+                <a href="#demo" class="account-panel-item" role="menuitem">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                  </svg>
+                  <span>My Service & Demos</span>
+                </a>
+                <a href="#products" class="account-panel-item" role="menuitem">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 14 14"></polyline>
+                  </svg>
+                  <span>Annual Maintenance (AMC)</span>
+                </a>
+                <a href="#testimonials" class="account-panel-item" role="menuitem">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                  <span>Warranty & Support</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile Hamburger Button -->
+          <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false"
+            aria-controls="mobile-nav">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+
+      </nav>
+
+      <!-- Mobile Navigation Drawer -->
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+        <a href="#hero">Home</a>
+        <a href="#products">Purifiers</a>
+        <a href="#technology">Why KENT</a>
+        <a href="#testimonials">Customer Reviews</a>
+        <a href="#products" class="mobile-nav-item-wishlist" id="mobileWishlistLink">
+          <span class="mobile-nav-item-left">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+              </path>
+            </svg>
+            <span>My Wishlist</span>
+          </span>
+          <span class="mobile-wishlist-count" id="mobileWishlistCount">0</span>
+        </a>
+        <a href="#demo" class="mobile-nav-btn-demo">Book a Demo</a>
+      </nav>
+    </div>
+  </header>
+
+
+
+  <!-- ═══════════════════════════════════════════════════════
+     S1 — HERO SECTION (HD Water Splash + KENT Purifier Showcase)
+══════════════════════════════════════════════════════════ -->
+  <main>
+    <section id="hero" class="hero-kent" aria-labelledby="hero-title">
+      <!-- 2880x1200 UHD Panoramic Luxury Studio Background (Plinths + Water Ribbon) -->
+      <div class="hero-bg-panoramic" aria-hidden="true"></div>
+
+      <div class="container hero-container">
+        <div class="hero-inspired-grid">
+
+          <!-- LEFT COLUMN: Typography & Brand Stats -->
+          <div class="hero-inspired-text">
+            <div class="hero-luxury-kicker">
+              <span class="hero-kicker-star">★</span>
+              <span class="hero-kicker-title">The Gold Standard of Purity</span>
+              <span class="hero-kicker-line"></span>
+            </div>
+
+            <h1 class="hero-title-inspired" id="hero-title">
+              Purified Water.<br />
+              <span class="hero-title-accent">Essential Purity.</span>
+            </h1>
+
+            <p class="hero-subtitle-inspired">
+              <span class="hero-sub-desktop">India’s most trusted water purification, perfected over 25+ years.
+                Engineered with patented Mineral RO™ multi-stage science that eliminates 100% of dissolved impurities,
+                bacteria, and viruses while retaining vital natural calcium and magnesium.</span>
+              <span class="hero-sub-mobile">India’s most trusted water purification for 25+ years.<br />Patented Mineral
+                RO™ retains vital natural minerals.</span>
+            </p>
+
+            <!-- Brand Trust Stats Strip (3 Pillars) -->
+            <div class="hero-stats-strip">
+              <div class="hero-stat-item">
+                <span class="hero-stat-value">1 Crore+</span>
+                <span class="hero-stat-label">Happy Families</span>
+              </div>
+              <div class="hero-stat-divider"></div>
+              <div class="hero-stat-item">
+                <span class="hero-stat-value">25+ Years</span>
+                <span class="hero-stat-label">Purity &amp; Trust</span>
+              </div>
+              <div class="hero-stat-divider"></div>
+              <div class="hero-stat-item">
+                <span class="hero-stat-value">100%</span>
+                <span class="hero-stat-label">Retained Minerals</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT COLUMN: UHD Pedestal Showcase (Seamless background on desktop, Dedicated showcase on tablet & mobile) -->
+          <div class="hero-inspired-visual">
+            <img src="assets/images/hero_showcase_mobile_clean.webp" alt="KENT Flagship Mineral RO Purifier Range"
+              class="hero-showcase-img" loading="eager" width="800" height="600">
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Subtle Organic Wave Transition to Next Section -->
+      <div class="hero-wave-bottom" aria-hidden="true">
+        <svg class="hero-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,25 C320,55 480,8 720,28 C960,48 1160,10 1440,24 L1440,60 L0,60 Z" fill="#FAF9F6" />
+        </svg>
+      </div>
+
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════
+     S2 — PRODUCT SHOWCASE (Refined High-End E-Commerce Cards)
+══════════════════════════════════════════════════════════ -->
+    <section id="products" class="section section-products" aria-labelledby="products-title">
+      <div class="container">
+
+        <!-- Section Header: Natural Luxury Eyebrow & Inspiring Copy -->
+        <div class="section-header reveal">
+          <div class="luxury-kicker-wrap">
+            <span class="luxury-kicker-line"></span>
+            <div class="luxury-kicker-badge">
+              <svg class="luxury-kicker-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+              </svg>
+              <span class="luxury-kicker-text">Pristine Mineral Hydration</span>
+            </div>
+            <span class="luxury-kicker-line"></span>
+          </div>
+          <h2 class="section-title" id="products-title">
+            Pure Water, Crafted Without Compromise
+          </h2>
+          <p class="section-subtitle">
+            Engineered with patented Mineral RO™ multi-stage science that eliminates 100% of dissolved impurities while
+            preserving vital calcium, magnesium, and essential alkaline minerals for natural vitality.
+          </p>
+        </div>
+
+        <!-- Filter Tabs by Water Purity Science -->
+        <div class="filter-bar reveal reveal-delay-1" role="tablist" aria-label="Filter products by series">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Flagships</button>
+          <button class="filter-btn" data-filter="mineral-ro" role="tab" aria-selected="false">Mineral RO™ + UV</button>
+          <button class="filter-btn" data-filter="alkaline-copper" role="tab" aria-selected="false">Alkaline &amp;
+            Copper+</button>
+          <button class="filter-btn" data-filter="smart-iot" role="tab" aria-selected="false">Smart IoT
+            Connected</button>
+          <button class="filter-btn" data-filter="eco-recovery" role="tab" aria-selected="false">Zero Wastage
+            Eco</button>
+        </div>
+
+        <!-- Product Carousel Section (Finite Bounded Carousel) -->
+        <div class="product-carousel-wrapper" aria-label="KENT Purifier Showcase Carousel">
+
+          <!-- Prev Navigation Arrow -->
+          <button class="carousel-arrow carousel-arrow-prev" id="productCarouselPrev" aria-label="Previous Product"
+            type="button">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+
+          <!-- Carousel Viewport -->
+          <div class="product-carousel-viewport" id="productCarouselViewport">
+            <div class="product-carousel-track" id="productCarouselTrack" role="list">
+
+              <!-- Product Card 1: KENT Grand Star -->
+              <article class="catalog-card product-card" data-category="mineral-ro" data-index="0" role="listitem">
+                <div class="catalog-card-media">
+                  <img src="assets/images/product_grand_star.jpg" alt="KENT Grand Star Water Purifier" loading="lazy"
+                    width="220" height="220">
+                </div>
+                <div class="catalog-card-body">
+                  <span class="catalog-card-category">Mineral RO™ + UV Series</span>
+                  <h3 class="catalog-card-title">KENT Grand Star</h3>
+                  <p class="catalog-card-desc">Digital purity display with real-time TDS tracking, multi-stage RO+UV+UF,
+                    and in-tank UV disinfection for uninterrupted safety.</p>
+                  <div class="catalog-card-price">
+                    <span class="price-current">₹21,999</span>
+                    <span class="price-mrp">₹25,000</span>
+                  </div>
+                  <div class="catalog-card-footer">
+                    <button class="card-action-wishlist" type="button" aria-label="Save KENT Grand Star to Wishlist"
+                      data-product="grand-star" title="Save to Wishlist">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                      </svg>
+                    </button>
+                    <button class="catalog-card-button-secondary btn-view-product" type="button"
+                      data-product="grand-star" aria-label="View Product: KENT Grand Star">View Product</button>
+                    <button class="catalog-card-button-primary btn-add-cart" type="button" data-product="grand-star"
+                      data-name="KENT Grand Star" data-price="21999" aria-label="Add KENT Grand Star to Cart">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                      </svg>
+                      <span>Add to Cart</span>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Product Card 2: KENT Grand IoT -->
+              <article class="catalog-card product-card" data-category="smart-iot" data-index="1" role="listitem">
+                <div class="catalog-card-media">
+                  <img src="assets/images/product_grand_iot.jpg" alt="KENT Grand IoT Water Purifier" loading="lazy"
+                    width="220" height="220">
+                </div>
+                <div class="catalog-card-body">
+                  <span class="catalog-card-category">Smart IoT Connected</span>
+                  <h3 class="catalog-card-title">KENT Grand IoT</h3>
+                  <p class="catalog-card-desc">Next-generation smart connectivity with live purity metrics, automated
+                    filter health monitoring, and doorstep service requests through your smartphone.</p>
+                  <div class="catalog-card-price">
+                    <span class="price-current">₹23,499</span>
+                    <span class="price-mrp">₹27,000</span>
+                  </div>
+                  <div class="catalog-card-footer">
+                    <button class="card-action-wishlist" type="button" aria-label="Save KENT Grand IoT to Wishlist"
+                      data-product="grand-iot" title="Save to Wishlist">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                      </svg>
+                    </button>
+                    <button class="catalog-card-button-secondary btn-view-product" type="button"
+                      data-product="grand-iot" aria-label="View Product: KENT Grand IoT">View Product</button>
+                    <button class="catalog-card-button-primary btn-add-cart" type="button" data-product="grand-iot"
+                      data-name="KENT Grand IoT" data-price="23499" aria-label="Add KENT Grand IoT to Cart">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                      </svg>
+                      <span>Add to Cart</span>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Product Card 3: KENT Supreme Plus -->
+              <article class="catalog-card product-card" data-category="alkaline-copper" data-index="2" role="listitem">
+                <div class="catalog-card-media">
+                  <img src="assets/images/kent-supreme.png" alt="KENT Supreme Plus Water Purifier" loading="lazy"
+                    width="220" height="220">
+                </div>
+                <div class="catalog-card-body">
+                  <span class="catalog-card-category">Bio-Alkaline Antioxidant</span>
+                  <h3 class="catalog-card-title">KENT Supreme Plus</h3>
+                  <p class="catalog-card-desc">Bio-alkaline infusion maintaining optimal pH 8.0–9.5 to neutralize
+                    acidity, paired with active copper and zinc for daily cellular immunity.</p>
+                  <div class="catalog-card-price">
+                    <span class="price-current">₹18,499</span>
+                    <span class="price-mrp">₹21,500</span>
+                  </div>
+                  <div class="catalog-card-footer">
+                    <button class="card-action-wishlist" type="button" aria-label="Save KENT Supreme Plus to Wishlist"
+                      data-product="supreme-plus" title="Save to Wishlist">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                      </svg>
+                    </button>
+                    <button class="catalog-card-button-secondary btn-view-product" type="button"
+                      data-product="supreme-plus" aria-label="View Product: KENT Supreme Plus">View Product</button>
+                    <button class="catalog-card-button-primary btn-add-cart" type="button" data-product="supreme-plus"
+                      data-name="KENT Supreme Plus" data-price="18499" aria-label="Add KENT Supreme Plus to Cart">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                      </svg>
+                      <span>Add to Cart</span>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Product Card 4: KENT Ace Copper -->
+              <article class="catalog-card product-card" data-category="alkaline-copper" data-index="3" role="listitem">
+                <div class="catalog-card-media">
+                  <img src="assets/images/product_ace_copper.jpg" alt="KENT Ace Copper Water Purifier" loading="lazy"
+                    width="220" height="220">
+                </div>
+                <div class="catalog-card-body">
+                  <span class="catalog-card-category">Pure Active Copper+</span>
+                  <h3 class="catalog-card-title">KENT Ace Copper</h3>
+                  <p class="catalog-card-desc">Time-tested Ayurvedic wellness modernised. Delivers instant 99.9% pure
+                    active copper ions that support metabolism and digestive health.</p>
+                  <div class="catalog-card-price">
+                    <span class="price-current">₹15,499</span>
+                    <span class="price-mrp">₹18,000</span>
+                  </div>
+                  <div class="catalog-card-footer">
+                    <button class="card-action-wishlist" type="button" aria-label="Save KENT Ace Copper to Wishlist"
+                      data-product="ace-copper" title="Save to Wishlist">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                      </svg>
+                    </button>
+                    <button class="catalog-card-button-secondary btn-view-product" type="button"
+                      data-product="ace-copper" aria-label="View Product: KENT Ace Copper">View Product</button>
+                    <button class="catalog-card-button-primary btn-add-cart" type="button" data-product="ace-copper"
+                      data-name="KENT Ace Copper" data-price="15499" aria-label="Add KENT Ace Copper to Cart">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                      </svg>
+                      <span>Add to Cart</span>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Product Card 5: KENT Sterling Star -->
+              <article class="catalog-card product-card" data-category="mineral-ro" data-index="4" role="listitem">
+                <div class="catalog-card-media">
+                  <img src="assets/images/product_sterling_undersink.jpg" alt="KENT Sterling Star Water Purifier"
+                    loading="lazy" width="220" height="220">
+                </div>
+                <div class="catalog-card-body">
+                  <span class="catalog-card-category">Concealed Under-Counter RO</span>
+                  <h3 class="catalog-card-title">KENT Sterling Star</h3>
+                  <p class="catalog-card-desc">Concealed under-sink installation paired with an elegant stainless steel
+                    swan faucet, preserving luxury minimalist kitchen counter aesthetics.</p>
+                  <div class="catalog-card-price">
+                    <span class="price-current">₹22,999</span>
+                    <span class="price-mrp">₹26,500</span>
+                  </div>
+                  <div class="catalog-card-footer">
+                    <button class="card-action-wishlist" type="button" aria-label="Save KENT Sterling Star to Wishlist"
+                      data-product="sterling-star" title="Save to Wishlist">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                      </svg>
+                    </button>
+                    <button class="catalog-card-button-secondary btn-view-product" type="button"
+                      data-product="sterling-star" aria-label="View Product: KENT Sterling Star">View Product</button>
+                    <button class="catalog-card-button-primary btn-add-cart" type="button" data-product="sterling-star"
+                      data-name="KENT Sterling Star" data-price="22999" aria-label="Add KENT Sterling Star to Cart">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                      </svg>
+                      <span>Add to Cart</span>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Product Card 6: KENT Marvel -->
+              <article class="catalog-card product-card" data-category="eco-recovery" data-index="5" role="listitem">
+                <div class="catalog-card-media">
+                  <img src="assets/images/product_marvel_compact.jpg" alt="KENT Marvel Water Purifier" loading="lazy"
+                    width="220" height="220">
+                </div>
+                <div class="catalog-card-body">
+                  <span class="catalog-card-category">Zero Water Wastage RO</span>
+                  <h3 class="catalog-card-title">KENT Marvel</h3>
+                  <p class="catalog-card-desc">High-recovery RO technology with an ultra-compact footprint, producing 20
+                    liters/hr of mineral-balanced water with zero water wastage.</p>
+                  <div class="catalog-card-price">
+                    <span class="price-current">₹12,499</span>
+                    <span class="price-mrp">₹14,500</span>
+                  </div>
+                  <div class="catalog-card-footer">
+                    <button class="card-action-wishlist" type="button" aria-label="Save KENT Marvel to Wishlist"
+                      data-product="marvel" title="Save to Wishlist">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                      </svg>
+                    </button>
+                    <button class="catalog-card-button-secondary btn-view-product" type="button" data-product="marvel"
+                      aria-label="View Product: KENT Marvel">View Product</button>
+                    <button class="catalog-card-button-primary btn-add-cart" type="button" data-product="marvel"
+                      data-name="KENT Marvel" data-price="12499" aria-label="Add KENT Marvel to Cart">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                      </svg>
+                      <span>Add to Cart</span>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+            </div><!-- /product-carousel-track -->
+          </div><!-- /product-carousel-viewport -->
+
+          <!-- Next Navigation Arrow -->
+          <button class="carousel-arrow carousel-arrow-next" id="productCarouselNext" aria-label="Next Product"
+            type="button">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+
+        </div><!-- /product-carousel-wrapper -->
+
+        <!-- Carousel Pagination Dots -->
+        <div class="carousel-dots" id="productCarouselDots" role="tablist" aria-label="Product slides"></div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════
+     S3 — WHY KENT: PATENTED TECHNOLOGY TRUST
+══════════════════════════════════════════════════════════ -->
+    <section id="technology" class="section section-tech" aria-labelledby="tech-title">
+      <div class="container">
+
+        <!-- Section Header: Luxury Centralized Kicker & Playfair Title matching Product Showcase -->
+        <div class="section-header reveal">
+          <div class="luxury-kicker-wrap">
+            <span class="luxury-kicker-line"></span>
+            <div class="luxury-kicker-badge">
+              <svg class="luxury-kicker-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                </polygon>
+              </svg>
+              <span class="luxury-kicker-text">Purity Science &amp; Innovation</span>
+            </div>
+            <span class="luxury-kicker-line"></span>
+          </div>
+          <h2 class="section-title" id="tech-title">
+            Why Health-Conscious Homes Choose KENT
+          </h2>
+          <p class="section-subtitle">
+            Exceptional multi-stage Mineral RO™ engineering and zero water wastage that set India's gold standard for
+            pure drinking water.
+          </p>
+        </div>
+
+        <!-- Compact Luxury Bento Collage (Minimal, High-Depth, Authentic Water Science) -->
+        <div class="bento-grid reveal">
+
+          <!-- Bento Card 1: Tall Left Column (Pristine Pouring Water) -->
+          <article class="bento-card bento-card-tall">
+            <div class="bento-tall-visual">
+              <img src="assets/images/bento-water-pour.jpg"
+                alt="Crystal clear pure drinking water pouring into a clean glass" class="bento-img-cover" width="400"
+                height="200" loading="lazy" />
+            </div>
+            <div class="bento-tall-content">
+              <span class="bento-kicker-tag">Mineral RO™ Technology</span>
+              <h3 class="bento-card-headline">
+                Pure hydration retaining 100% natural minerals in every drop.
+              </h3>
+              <a href="#products" class="bento-pill-btn" aria-label="Explore purifiers">
+                <span>Explore Purifiers</span>
+                <span class="bento-btn-arrow" aria-hidden="true">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Bento Card 2: Mid Top Card (Family Trust) -->
+          <article class="bento-card bento-card-mid">
+            <div class="bento-mid-visual">
+              <img src="assets/images/bento-family-trust.jpg"
+                alt="Mother sharing fresh pure water with child in bright kitchen" class="bento-img-cover" width="440"
+                height="140" loading="lazy" />
+            </div>
+            <p class="bento-two-tone-text">
+              <strong class="bento-bold-lead">Trusted by</strong>
+              <span class="bento-muted-trail">over 1 crore+ happy families nationwide for 25+ years.</span>
+            </p>
+          </article>
+
+          <!-- Bento Card 3: Top Right Stat Card (0% Water Wastage) -->
+          <article class="bento-card bento-card-stat">
+            <div class="bento-stat-top">
+              <span class="bento-stat-value">0%</span>
+              <span class="bento-stat-badge">
+                <span class="bento-stat-badge-dot" aria-hidden="true"></span>
+                Zero Wastage
+              </span>
+            </div>
+            <div class="bento-stat-content">
+              <h3 class="bento-stat-title">Eco Recirculation</h3>
+              <p class="bento-stat-desc">
+                Recirculates 100% reject water back into your overhead tank.
+              </p>
+            </div>
+            <div class="bento-eco-metric-bar" aria-label="Overhead Tank Recirculation">
+              <span class="bento-eco-metric-label">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path>
+                </svg>
+                Overhead Recycle
+              </span>
+              <span class="bento-eco-metric-val">100%</span>
+            </div>
+          </article>
+
+          <!-- Bento Card 4: Wide Bottom Card (Active UV-C In-Tank Sterilisation) -->
+          <article class="bento-card bento-card-wide">
+            <div class="bento-wide-content">
+              <p class="bento-two-tone-text bento-wide-lead">
+                <strong class="bento-bold-lead">Active UV-C in-tank sterilisation</strong>
+                <span class="bento-muted-trail">safeguards stored water 24×7, preventing bacterial regrowth.</span>
+              </p>
+              <div class="bento-wide-pills">
+                <span class="bento-pill-tag">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  100% Minerals
+                </span>
+                <span class="bento-pill-tag">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  UV-C Guard
+                </span>
+                <span class="bento-pill-tag">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Smart IoT
+                </span>
+              </div>
+            </div>
+            <div class="bento-wide-visual">
+              <img src="assets/images/bento-morning-wellness.jpg"
+                alt="Woman enjoying fresh pure morning drinking water in natural home kitchen" class="bento-wide-img"
+                width="320" height="160" loading="lazy" />
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════
+     S4 — "WHY KENT" TESTIMONIALS MARQUEE SLIDER
+     (Horizontal Floating Cards with 3s Auto-Slider Interval)
+══════════════════════════════════════════════════════════ -->
+    <section id="testimonials" class="section section-testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+
+        <!-- Centralized Luxury Header matching Product & Bento sections -->
+        <div class="section-header reveal">
+          <div class="luxury-kicker-wrap">
+            <span class="luxury-kicker-line"></span>
+            <div class="luxury-kicker-badge">
+              <svg class="luxury-kicker-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+              <span class="luxury-kicker-text">Real Customer Stories</span>
+            </div>
+            <span class="luxury-kicker-line"></span>
+          </div>
+          <h2 class="section-title" id="testimonials-title">
+            Trusted by 1 Crore+ Happy Families
+          </h2>
+          <p class="section-subtitle">
+            Discover why homeowners, pediatricians, and wellness enthusiasts choose KENT for pure daily living.
+          </p>
+        </div>
+
+        <!-- Marquee Slider Container & Carousel Track -->
+        <div class="testimonial-slider-container" id="testimonial-slider-container" aria-roledescription="carousel"
+          aria-label="Customer Reviews">
+          <div class="testimonial-track" id="testimonial-track">
+
+            <!-- Card 1 -->
+            <article class="testimonial-card" role="group" aria-roledescription="slide" aria-label="Review 1 of 6">
+              <div class="review-stars" aria-label="5 out of 5 stars">
+                ★★★★★
+              </div>
+              <blockquote class="review-body">
+                “Switching to KENT Grand Star was the best decision for our home. The digital TDS readout provides
+                complete peace of mind every morning, and the water tastes naturally sweet like Himalayan spring water.”
+              </blockquote>
+              <div class="review-user-footer">
+                <div class="user-avatar-wrap">
+                  <svg class="user-avatar-svg" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22" cy="22" r="22" fill="#E7F1EE" />
+                    <circle cx="22" cy="16" r="8" fill="#0E544A" />
+                    <path d="M8 38 C8 29 14 26 22 26 C30 26 36 29 36 38 Z" fill="#083832" />
+                  </svg>
+                  <span class="user-verified-check" title="Verified Customer">✓</span>
+                </div>
+                <div class="user-meta">
+                  <strong class="user-name">Priya Sharma</strong>
+                  <span class="user-details">Verified Buyer • Gurugram (Grand Star)</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="testimonial-card" role="group" aria-roledescription="slide" aria-label="Review 2 of 6">
+              <div class="review-stars" aria-label="5 out of 5 stars">
+                ★★★★★
+              </div>
+              <blockquote class="review-body">
+                “As a pediatrician, pure water is non-negotiable for my clinic and home. KENT’s retention of essential
+                minerals combined with continuous UV in-tank sterilisation sets the gold benchmark for family health.”
+              </blockquote>
+              <div class="review-user-footer">
+                <div class="user-avatar-wrap">
+                  <svg class="user-avatar-svg" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22" cy="22" r="22" fill="#ECFDF5" />
+                    <circle cx="22" cy="16" r="8" fill="#059669" />
+                    <path d="M8 38 C8 29 14 26 22 26 C30 26 36 29 36 38 Z" fill="#065F46" />
+                  </svg>
+                  <span class="user-verified-check" title="Verified Customer">✓</span>
+                </div>
+                <div class="user-meta">
+                  <strong class="user-name">Dr. Vikram Sethi</strong>
+                  <span class="user-details">Pediatrician • New Delhi (Supreme Plus)</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="testimonial-card" role="group" aria-roledescription="slide" aria-label="Review 3 of 6">
+              <div class="review-stars" aria-label="5 out of 5 stars">
+                ★★★★★
+              </div>
+              <blockquote class="review-body">
+                “The IoT smartphone alerts are a game changer! It notified me immediately when our municipal TDS spiked
+                during monsoons and reminded me automatically for AMC service. Truly seamless!”
+              </blockquote>
+              <div class="review-user-footer">
+                <div class="user-avatar-wrap">
+                  <svg class="user-avatar-svg" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22" cy="22" r="22" fill="#F5F3FF" />
+                    <circle cx="22" cy="16" r="8" fill="#7C3AED" />
+                    <path d="M8 38 C8 29 14 26 22 26 C30 26 36 29 36 38 Z" fill="#5B21B6" />
+                  </svg>
+                  <span class="user-verified-check" title="Verified Customer">✓</span>
+                </div>
+                <div class="user-meta">
+                  <strong class="user-name">Ananya Deshmukh</strong>
+                  <span class="user-details">Verified Buyer • Mumbai (Grand IoT)</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="testimonial-card" role="group" aria-roledescription="slide" aria-label="Review 4 of 6">
+              <div class="review-stars" aria-label="5 out of 5 stars">
+                ★★★★★
+              </div>
+              <blockquote class="review-body">
+                “We wanted a completely clutter-free modular kitchen. The Sterling Star fits seamlessly under our quartz
+                counter, delivering pure mineral water through its stylish swan-neck faucet. Outstanding design!”
+              </blockquote>
+              <div class="review-user-footer">
+                <div class="user-avatar-wrap">
+                  <svg class="user-avatar-svg" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22" cy="22" r="22" fill="#F0F7F5" />
+                    <circle cx="22" cy="16" r="8" fill="#0E544A" />
+                    <path d="M8 38 C8 29 14 26 22 26 C30 26 36 29 36 38 Z" fill="#0A0A0A" />
+                  </svg>
+                  <span class="user-verified-check" title="Verified Customer">✓</span>
+                </div>
+                <div class="user-meta">
+                  <strong class="user-name">Rajesh Ramanathan</strong>
+                  <span class="user-details">Verified Buyer • Bengaluru (Sterling Star)</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="testimonial-card" role="group" aria-roledescription="slide" aria-label="Review 5 of 6">
+              <div class="review-stars" aria-label="5 out of 5 stars">
+                ★★★★★
+              </div>
+              <blockquote class="review-body">
+                “The natural copper infusion gives us Ayurvedic health benefits with modern RO purity. Both my parents
+                love the taste, and their digestion has noticeably improved over the past year.”
+              </blockquote>
+              <div class="review-user-footer">
+                <div class="user-avatar-wrap">
+                  <svg class="user-avatar-svg" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22" cy="22" r="22" fill="#FFF7ED" />
+                    <circle cx="22" cy="16" r="8" fill="#EA580C" />
+                    <path d="M8 38 C8 29 14 26 22 26 C30 26 36 29 36 38 Z" fill="#9A3412" />
+                  </svg>
+                  <span class="user-verified-check" title="Verified Customer">✓</span>
+                </div>
+                <div class="user-meta">
+                  <strong class="user-name">Kavita &amp; Arvind Nair</strong>
+                  <span class="user-details">Verified Buyer • Kochi (Ace Copper)</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="testimonial-card" role="group" aria-roledescription="slide" aria-label="Review 6 of 6">
+              <div class="review-stars" aria-label="5 out of 5 stars">
+                ★★★★★
+              </div>
+              <blockquote class="review-body">
+                “Compact yet exceptionally reliable. Even with high salinity ground water, our KENT delivers 38 ppm
+                sweet water every day. The free home demo technician was courteous and knowledgeable.”
+              </blockquote>
+              <div class="review-user-footer">
+                <div class="user-avatar-wrap">
+                  <svg class="user-avatar-svg" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22" cy="22" r="22" fill="#F0FDF4" />
+                    <circle cx="22" cy="16" r="8" fill="#16A34A" />
+                    <path d="M8 38 C8 29 14 26 22 26 C30 26 36 29 36 38 Z" fill="#14532D" />
+                  </svg>
+                  <span class="user-verified-check" title="Verified Customer">✓</span>
+                </div>
+                <div class="user-meta">
+                  <strong class="user-name">Sunita Singhania</strong>
+                  <span class="user-details">Verified Buyer • Kolkata (Marvel Compact)</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- Unified Bottom Navigation Controls (Side Arrows beside Carousel Dots) -->
+        <div class="testimonial-bottom-nav reveal" aria-label="Customer review navigation">
+          <button class="slider-btn slider-prev" id="slider-prev" aria-label="Previous testimonials"
+            title="Previous reviews">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+
+          <!-- Indicator Dots -->
+          <div class="slider-dots" id="slider-dots" aria-label="Testimonial slide dots">
+            <!-- Generated via JS -->
+          </div>
+
+          <button class="slider-btn slider-next" id="slider-next" aria-label="Next testimonials" title="Next reviews">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════
+     S5 — BOOK A FREE DEMO SECTION
+══════════════════════════════════════════════════════════ -->
+    <section id="demo" class="section section-demo" aria-labelledby="demo-title">
+      <div class="container">
+        <div class="demo-inner">
+
+          <!-- Left: Minimal Value Proposition -->
+          <div class="demo-content reveal">
+            <div class="luxury-kicker-wrap luxury-kicker-left">
+              <div class="luxury-kicker-badge">
+                <span class="kicker-pulse-dot" aria-hidden="true"></span>
+                <span class="luxury-kicker-text">Complimentary Service</span>
+              </div>
+            </div>
+            <h2 class="demo-title" id="demo-title">
+              Experience Live Purity<br /><span class="demo-title-accent">At Your Doorstep.</span>
+            </h2>
+            <p class="demo-subtitle">
+              A certified specialist tests your tap water’s TDS live and helps you choose the ideal purifier—completely
+              free with zero purchase obligation.
+            </p>
+
+            <!-- Minimal Benefit Rows -->
+            <ul class="demo-minimal-benefits" aria-label="Complimentary Demo Inclusions">
+              <li class="demo-benefit-row">
+                <span class="demo-check-icon" aria-hidden="true">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <span class="demo-benefit-text">
+                  <strong>Live On-Site TDS &amp; Water Test</strong> · <em>Zero fee diagnosis</em>
+                </span>
+              </li>
+
+              <li class="demo-benefit-row">
+                <span class="demo-check-icon" aria-hidden="true">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <span class="demo-benefit-text">
+                  <strong>100% Free • Zero Obligation</strong> · <em>Taste before you decide</em>
+                </span>
+              </li>
+
+              <li class="demo-benefit-row">
+                <span class="demo-check-icon" aria-hidden="true">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <span class="demo-benefit-text">
+                  <strong>Confirmed in 24 Hours</strong> · <em>Priority doorstep scheduling</em>
+                </span>
+              </li>
+            </ul>
+
+            <!-- Minimal Reassurance Pill -->
+            <div class="demo-trust-capsule">
+              <span class="demo-trust-stars" aria-label="Rated 4.9 out of 5 stars">★★★★★</span>
+              <span class="demo-trust-label"><strong>4.9/5 Rating</strong> from 25,000+ home demos this month</span>
+            </div>
+          </div>
+
+          <!-- Right: Demo Booking Card -->
+          <div class="demo-form-card">
+            <div id="form-content">
+              <div class="form-header">
+                <h3 class="demo-form-heading">Book Your Free Home Demo</h3>
+                <span class="form-badge-free">100% Free</span>
+              </div>
+
+              <form id="demo-form" novalidate aria-label="Book a demo form">
+                <!-- Full Name -->
+                <div class="form-group">
+                  <label for="full-name">Full Name <span class="required" aria-hidden="true">*</span></label>
+                  <input type="text" id="full-name" name="full-name" class="form-control" placeholder="e.g. Anjali Nair"
+                    required autocomplete="name" aria-required="true" />
+                  <span class="form-error" role="alert">Please enter your full name.</span>
+                </div>
+
+                <!-- Mobile -->
+                <div class="form-group">
+                  <label for="phone">Mobile Number <span class="required" aria-hidden="true">*</span></label>
+                  <div class="input-phone-wrap">
+                    <span class="phone-prefix">+91</span>
+                    <input type="tel" id="phone" name="phone" class="form-control" placeholder="10-digit mobile number"
+                      required autocomplete="tel" aria-required="true" inputmode="numeric" maxlength="10" />
+                  </div>
+                  <span class="form-error" role="alert">Please enter a valid 10-digit Indian mobile number.</span>
+                </div>
+
+                <!-- City + Date row -->
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="city">City <span class="required" aria-hidden="true">*</span></label>
+                    <div class="select-wrap">
+                      <select id="city" name="city" class="form-control" required aria-required="true">
+                        <option value="" disabled selected>Select city</option>
+                        <option value="delhi">Delhi / NCR</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="bengaluru">Bengaluru</option>
+                        <option value="hyderabad">Hyderabad</option>
+                        <option value="chennai">Chennai</option>
+                        <option value="kolkata">Kolkata</option>
+                        <option value="pune">Pune</option>
+                        <option value="ahmedabad">Ahmedabad</option>
+                        <option value="jaipur">Jaipur</option>
+                        <option value="kochi">Kochi</option>
+                      </select>
+                    </div>
+                    <span class="form-error" role="alert">Please select your city.</span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="demo-date">Preferred Date <span class="required" aria-hidden="true">*</span></label>
+                    <input type="date" id="demo-date" name="demo-date" class="form-control" required
+                      aria-required="true" />
+                    <span class="form-error" role="alert">Please choose a future date.</span>
+                  </div>
+                </div>
+
+                <!-- Product Interest -->
+                <div class="form-group">
+                  <label for="product-interest">Preferred Purifier Model (Optional)</label>
+                  <div class="select-wrap">
+                    <select id="product-interest" name="product-interest" class="form-control">
+                      <option value="" selected>Select Model</option>
+                      <option value="grand-star">KENT Grand Star (Digital Display)</option>
+                      <option value="grand-iot">KENT Grand IoT (Smart WiFi)</option>
+                      <option value="supreme-plus">KENT Supreme Plus (Alkaline)</option>
+                      <option value="ace-copper">KENT Ace Copper (Copper+)</option>
+                      <option value="sterling-star">KENT Sterling Star (Under-Sink)</option>
+                      <option value="marvel">KENT Marvel (Compact)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-red" id="form-submit" aria-label="Confirm free demo booking">
+                  <span>Confirm Free Demo Booking</span>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <div class="form-security-note">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                  <span>Your information is strictly protected. No spam calls.</span>
+                </div>
+              </form>
+            </div>
+
+            <!-- Success Message -->
+            <div class="demo-success" id="demo-success" aria-live="polite" role="status">
+              <div class="success-icon" aria-hidden="true">
+                <svg width="40" height="40" viewBox="0 0 36 36" fill="none">
+                  <circle cx="18" cy="18" r="17" fill="#ECFDF5" />
+                  <path d="M10 18l6 6 11-12" stroke="#10B981" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+              <h3>Demo Booked Successfully!</h3>
+              <p>Our water specialist will contact you to confirm your preferred time slot. Thank you for choosing KENT.
+              </p>
+              <button class="btn btn-ghost" id="btn-book-another" style="margin-top: 14px;">Book Another Slot</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main><!-- /main -->
+
+
+  <!-- ═══════════════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="assets/images/kent-logo-light.png" alt="KENT — House of Purity" class="footer-logo-img"
+              width="120" height="60" />
+          </div>
+          <p class="footer-desc">
+            India's most awarded water purifier company, trusted by over 1 crore families for pure, mineral-rich
+            drinking water.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Products</h4>
+          <a href="#products">KENT Grand Star</a>
+          <a href="#products">KENT Grand IoT</a>
+          <a href="#products">KENT Supreme Plus</a>
+          <a href="#products">KENT Ace Copper</a>
+          <a href="#products">KENT Sterling Star</a>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Technology</h4>
+          <a href="#technology">Mineral RO™ System</a>
+          <a href="#technology">UV In-Tank Protection</a>
+          <a href="#technology">Zero Water Wastage</a>
+          <a href="#technology">Certifications</a>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Support</h4>
+          <a href="#demo">Book a Demo</a>
+          <a href="tel:18001001000">Toll Free: 1800-100-1000</a>
+          <a href="#testimonials">Customer Reviews</a>
+          <a href="#hero">Store Locator</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2024–2026 KENT RO Systems Ltd. All rights reserved. Patented Mineral RO™
+          Technology.</span>
+        <div class="footer-badges">
+          <span>ISO 9001:2015</span>
+          <span>•</span>
+          <span>CE Certified</span>
+          <span>•</span>
+          <span>NSF Certified</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════════════
+     PRODUCT DETAILS QUICK-VIEW MODAL (Minimalist Pop-up)
+══════════════════════════════════════════════════════════ -->
+  <div class="product-modal-backdrop" id="productModal" role="dialog" aria-modal="true" aria-hidden="true"
+    aria-labelledby="modalProductTitle">
+    <div class="product-modal-container">
+
+      <!-- Modal Top Header: Brand on left, circular close button on right -->
+      <div class="modal-top-header">
+        <div class="modal-brand-logo">
+          <img src="assets/images/kent-logo-dark.png" alt="KENT — House of Purity" class="modal-logo-img" width="85"
+            height="43" />
+        </div>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close product preview" type="button">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Modal Content: 2-Column Split -->
+      <div class="modal-content-grid">
+        <!-- Left Column: Product Photo -->
+        <div class="modal-product-media-wrap">
+          <picture class="modal-product-picture" id="modalProductPicture">
+            <source id="modalProductSource" srcset="assets/images/product_grand_star.jpg" type="image/jpeg" />
+            <img src="assets/images/product_grand_star.jpg" alt="KENT Grand Star" id="modalProductImg"
+              class="modal-product-img" width="400" height="400" loading="eager" />
+          </picture>
+        </div>
+
+        <!-- Right Column: Product Info & Actions -->
+        <div class="modal-product-info-wrap">
+          <span class="modal-product-kicker" id="modalProductKicker">KENT MINERAL RO™</span>
+          <h3 class="modal-product-title" id="modalProductTitle">KENT Grand Star</h3>
+
+          <div class="modal-product-price-row">
+            <span class="modal-price-val" id="modalProductPrice">₹21,999</span>
+            <span class="modal-price-mrp" id="modalProductMrp">₹25,000</span>
+            <span class="modal-price-discount" id="modalProductDiscount">12% OFF</span>
+          </div>
+
+          <p class="modal-product-desc" id="modalProductDesc">
+            Digital purity display with real-time TDS tracking, multi-stage RO+UV+UF, and in-tank UV disinfection for
+            uninterrupted mineral-rich safety.
+          </p>
+
+          <!-- CTA Buttons: Add to Cart & Buy Now -->
+          <div class="modal-cta-row">
+            <button class="btn-modal-cart" id="modalAddToCartBtn" type="button">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              </svg>
+              <span>Add to Cart</span>
+            </button>
+            <button class="btn-modal-buy" id="modalBuyNowBtn" type="button">
+              <span>Buy Now</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Minimal Reassurance Guarantees -->
+          <div class="modal-guarantees-grid">
+            <div class="modal-guarantee-card">
+              <div class="modal-guarantee-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="1 4 1 10 7 10"></polyline>
+                  <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+                </svg>
+              </div>
+              <div class="modal-guarantee-text">
+                <strong>30-Day Return</strong>
+                <span>100% money back guarantee</span>
+              </div>
+            </div>
+
+            <div class="modal-guarantee-card">
+              <div class="modal-guarantee-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  <polyline points="9 12 11 14 15 10"></polyline>
+                </svg>
+              </div>
+              <div class="modal-guarantee-text">
+                <strong>4-Year Warranty</strong>
+                <span>1-yr warranty + 3-yrs service</span>
+              </div>
+            </div>
+
+            <div class="modal-guarantee-card">
+              <div class="modal-guarantee-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="1" y="3" width="15" height="13"></rect>
+                  <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                  <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                  <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                </svg>
+              </div>
+              <div class="modal-guarantee-text">
+                <strong>Free 24h Setup</strong>
+                <span>Certified doorstep installation</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+
+</html>
