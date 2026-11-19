@@ -1,0 +1,44 @@
+# Environment variables & API credentials (NEVER commit secrets to git)
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+*.env
+*.key
+*.pem
+*.cert
+credentials.json
+secrets.json
+
+# Netlify local cache & CLI output
+.netlify
+
+# Dependencies (if npm tools are used)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor & IDE workspaces
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Temporary scratch & test artifacts
+scratch*
+*capture*.py
+temp/
+tmp/
+*.log
+
